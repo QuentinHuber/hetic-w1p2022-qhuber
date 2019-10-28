@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width: 700px) { /*Tablette et tel...*/
+@media screen and (max-width: 500px) { /*Tablette et tel...*/
     .column {
       width: 100%;
       display: block;
@@ -70,15 +70,16 @@ body {
   .column {
     float: left;
     width: 33%;
-    padding: 20px;
+    padding: 10px;
   }
   
   .shadow {
-    box-shadow: 0 4px 8px 0 black;
+    box-shadow: 0 4px 8px 0 rgb(37, 37, 37);
   }
   
   .containerschool {
     padding: 0 16px;
+    display: inline-flex;
   }
   
   .containerschool::after, .row::after {
