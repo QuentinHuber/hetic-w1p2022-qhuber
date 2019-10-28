@@ -1,0 +1,104 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 700px) { /*Tablette et tel...*/
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+
+/*Partie 1 : Barre Menu*/
+
+ul {
+    /*Barre*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262c34;
+    /*Couleur Barre*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    /*Couleur Text*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Barre en bas dès que le curseur est dessus (Marche pas en meme temps a cause du rectangle)*/
+li:nth-child(1+4):hover(.active) {
+    border-bottom: 3px solid #262c34;
+    /*Barre gris sous les rectangle vert*/
+}
+
+li:nth-child(2+3):hover(.active) {
+    border-bottom: 3px solid #4CAF50;
+    /*Barre vert sous les zones du menu en gris*/
+}
+
+li a:hover:not(.active) {
+    background-color: #1f242b;
+    /*Rectangle carré dès que curseur est dessus*/
+}
+
+.active {
+    color: #262c34;
+    /*Couleur police pour zone vert*/
+    background-color: #4CAF50;
+    /*Zone vert*/
+}
+
+/*Home (ecole...)*/
+body {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33%;
+    padding: 20px;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px 0 black;
+  }
+  
+  .containerschool {
+    padding: 0 16px;
+  }
+  
+  .containerschool::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: #262c34;
+  }
+  
+  /*Cours (prof ...)*/
+
+  .icon { /*Wankul*/
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  
